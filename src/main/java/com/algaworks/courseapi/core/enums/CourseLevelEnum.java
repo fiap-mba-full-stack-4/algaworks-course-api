@@ -5,9 +5,9 @@ import lombok.Getter;
 @Getter
 public enum CourseLevelEnum {
 
-	INICIANTE("Iniciante"),
-	INTERMEDIARIO("Intermediário"),
-	AVANCADO("Avançado");
+	INICIANTE("INICIANTE"),
+	INTERMEDIARIO("INTERMEDIÁRIO"),
+	AVANCADO("AVANÇADO");
 
 	private final String description;
 
