@@ -1,7 +1,7 @@
 package com.algaworks.courseapi.core.usecase;
 
 import com.algaworks.courseapi.core.gateway.CourseGateway;
-import com.algaworks.courseapi.exceptions.NotFoundException;
+import com.algaworks.courseapi.core.exceptions.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

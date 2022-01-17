@@ -1,4 +1,4 @@
-package com.algaworks.courseapi.exceptions;
+package com.algaworks.courseapi.core.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ResponseStatusException;

@@ -5,7 +5,7 @@ import java.util.List;
 import com.algaworks.courseapi.core.gateway.CourseGateway;
 import com.algaworks.courseapi.core.mapper.CourseMapper;
 import com.algaworks.courseapi.entrypoint.response.CourseResponse;
-import com.algaworks.courseapi.exceptions.NotFoundException;
+import com.algaworks.courseapi.core.exceptions.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
