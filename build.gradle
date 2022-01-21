@@ -21,6 +21,7 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'mysql:mysql-connector-java:5.1.13'
 	implementation 'io.springfox:springfox-swagger2:2.9.2'
 	implementation 'io.springfox:springfox-swagger-ui:2.9.2'
@@ -29,8 +30,13 @@ dependencies {
 
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
 }
 
 test {
+	environment 'SPRING_DATASOURCE_URL', 'jdbc:mysql://localhost:6612/algaworks?createDatabaseIfNotExist=true&useTimezone=true&serverTimezone=America/Sao_Paulo'
+	environment 'SPRING_DATASOURCE_USERNAME', 'root'
+	environment 'SPRING_DATASOURCE_PASSWORD', 'root'
+
 	useJUnitPlatform()
 }
